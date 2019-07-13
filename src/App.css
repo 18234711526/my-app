@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root, .box {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap .top {
+  width: 100%;
+  height: 45px;
+  background: skyblue;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+}
+
+.wrap .content {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+}
+
+.wrap .footer {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: solid #ccc 1px;
+}
+
+.wrap .footer a {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  line-height: 45px;
+}
+
+.mainBox {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  overflow: auto;
+}
+
+.mainBox .item {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  border-bottom: solid #ccc 1px;
+}
+
+.mainBox .item .left {
+  width: 40%;
+  height: 100%;
+  padding: 2px;
+}
+
+.mainBox .item .left img {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.mainBox .item .right {
+  width: 70%;
+  height: 100%;
+}
+
+.mainBox .item .right button {
+  outline: none;
+  border: none;
+  color: #61dafb;
+  background: #fff;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
